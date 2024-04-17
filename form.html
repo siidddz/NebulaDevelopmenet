@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230327195509" />
+	<link rel="stylesheet" href="css/style.min copy.css?_v=20230327195509">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <a class="header__logo" href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Nebula logo"></picture></a>
+                <nav class="header__menu menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="index.html">About Us</a></li>
+                        <li class="menu__item"><a href="careers.html">Careers</a></li>
+                        <li class="menu__item"><a href="contacts.html">Contacts</a></li>
+                        <li class="menu__item"><a href="form.html">Internship</a></li>
+                        <li class="menu__item menu__item_gradient"><a href="kronstories.html">#Nebulastories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>   
+    <div class="container">
+        <div class="details" id="details">
+            <h1>Registration Form Details</h1>
+            <p>Join the NebulaDevelopment Internship Journey and unlock your true potential!</p>
+            <p>"Embrace the power of community and elevate your skills with NebulaDevelopment."</p>
+            <p>Are you ready to embark on a transformative Unpaid internship experience?</p>
+            <p>NebulaDevelopment presents the Internship Journey, a 4-week virtual program designed to provide you with invaluable industry experience and knowledge in your chosen domain.</p>
+            <p>This is not just an internship; it's an opportunity to become part of a vibrant and supportive developer community.</p>
+            
+            <h2>The Benefits:</h2>
+            <ul>
+                <li>Offer Letter from NebulaDevelopment: Step into the professional world with an official offer letter recognizing your dedication and talent.</li>
+                <li>Internship Certificate: Validate your achievement and showcase your newly acquired skills with a prestigious internship certificate.</li>
+                <li>Resume Building Support: Get expert guidance on crafting a compelling resume that highlights your internship experience and sets you apart from the competition.</li>
+                <li>Letter of Recommendation: Stand out from the crowd with a personalized letter of recommendation based on your outstanding performance during the internship.</li>
+                <li>Access exclusive coding resources, cheatsheets, and eBooks to fuel your learning journey.</li>
+                <li>Gain real-world experience working on industry-relevant projects.</li>
+                <li>Have fun with our engaging and interactive sessions, team challenges, and networking opportunities.</li>
+                <li>Enjoy personalized posts and stories to share your unique internship moments.</li>
+            </ul>
+
+            <h2>Developer Community:</h2>
+            <p>Joining the NebulaDevelopment Internship Journey means becoming part of our thriving developer community. Engage with like-minded individuals, share knowledge, collaborate on projects, and learn from industry professionals. Our dedicated Discord server and WhatsApp group provide a platform for you to connect, grow, and make lasting friendships with fellow interns.</p>
+            <p>Don't miss out on this unique opportunity to be a part of a supportive community while gaining invaluable industry experience. Join us on this exciting journey!</p>
+
+            <h2>How To Register:</h2>
+            <p>It's simple! Fill up the registration form and await the approval of your Internship Offer Letter. Provide us with your basic details and specify your area of specialization. We will tailor your internship experience to your interests and goals, ensuring a meaningful and enriching journey.</p>
+            <p>Join our vibrant community on Telegram, where you'll stay connected with fellow interns, engage in discussions, and receive updates on events and resources. Follow us on LinkedIn for the latest news, insights, and networking opportunities. Don't forget to subscribe to our YouTube channel, where we share valuable tutorials and industry insights to further enhance your skills.</p>
+            <p>Spaces are limited, so seize this opportunity to become part of the NebulaDevelopment Internship Journey. Discover your potential, connect with the developer community, and set yourself on the path to success!</p>
+            
+            <p><strong>Note:</strong> Please provide accurate information in the registration form, as it will be considered your official application.</p>
+
+            <p><strong>Note:</strong> Please do not spam (apply multiple times for same domain), in this case your application will be considered as invalid.</p>
+        </div>
+        <div class="form" id="form">
+            <h1>Registration Form</h1>
+            <form action="https://script.google.com/macros/s/AKfycbxTDSZIVoRWHA-p1Uhr3Egu1LR6-37I7gqzdDJiqg7ijdtHMxDk958btHzooHSAgjIR/exec" method="POST" class="registration-form">
+                <!-- Form fields go here -->
+                <label for="email">Email<span>*</span>:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="name">Name<span>*</span>:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="whatsapp">WhatsApp Number<span>*</span>:</label><br>
+                <input type="tel" id="whatsapp" name="whatsapp" required><br><br>
+                
+                <label for="phone">Phone number<span>*</span>:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="qualification">Highest Academic Qualification<span>*</span>:</label><br>
+                <input type="text" id="qualification" name="qualification" required><br><br>
+                
+                <label for="college">College<span>*</span>:</label><br>
+                <input type="text" id="college" name="college" required><br><br>
+                
+                <label for="city">City<span>*</span>:</label><br>
+                <input type="text" id="city" name="city" required><br><br>
+                
+                <label for="year">Current Year of your Course<span>*</span>:</label><br>
+                <select id="year" name="year" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                
+                <label for="source">Where did you learn about NebulaDevelopment?<span>*</span>:</label><br>
+                <input type="radio" id="social_media" name="source" value="Social Media" required>
+                <label for="social_media">Social Media</label><br>
+                <input type="radio" id="referral" name="source" value="Referral" required>
+                <label for="referral">Referral</label><br><br>
+                
+                <label for="position">Which position(s) are you interested in?<span>*</span>:</label><br>
+                <input type="checkbox" id="web_dev" name="position" value="Web Development and Designing">
+                <label for="web_dev">Web Development and Designing</label><br>
+                <input type="checkbox" id="graphic_design" name="position" value="Graphic Design">
+                <label for="graphic_design">Graphic Design</label><br><br>
+                
+                <label for="queries">Queries (if Any):</label><br>
+                <textarea id="queries" name="queries" rows="4" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

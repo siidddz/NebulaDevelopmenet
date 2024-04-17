@@ -1,0 +1,154 @@
+body {
+	background-color: #090808;
+	background-image: url(../img/bg.png);
+	background-repeat: repeat;
+	background-position: top;
+	position: relative
+}
+
+
+
+[class*=__container] {
+	max-width: 72.75rem;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	margin: 0 auto
+}
+
+
+
+.header__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	border-bottom: 2px solid #2c3033;
+	height: 121px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative
+}
+
+.header__wrapper::before {
+	display: none
+}
+
+.header__logo {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 133px;
+	flex: 0 0 133px;
+	height: auto
+}
+
+@supports (flex-basis:clamp(5.625rem, 4.0125rem + 7.1666666667vw, 8.3125rem)) {
+	.header__logo {
+		-ms-flex-preferred-size: clamp(5.625rem, 4.0125rem + 7.1666666667vw, 8.3125rem);
+		flex-basis: clamp(5.625rem, 4.0125rem + 7.1666666667vw, 8.3125rem)
+	}
+}
+
+@supports not (flex-basis:clamp(5.625rem, 4.0125rem + 7.1666666667vw, 8.3125rem)) {
+	.header__logo {
+		-ms-flex-preferred-size: calc(5.625rem + 2.6875 * (100vw - 22.5rem)/ 37.5);
+		flex-basis: calc(5.625rem + 2.6875 * (100vw - 22.5rem)/ 37.5)
+	}
+}
+
+.header img {
+	width: 100%
+}
+
+.menu__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 0 5rem;
+	margin: 0 -5rem;
+	scrollbar-width: none
+}
+
+.menu__items::-webkit-scrollbar {
+	display: none
+}
+
+.menu__item {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	position: relative
+}
+
+@supports (font-size:clamp(1.125rem, 1.05rem + 0.3333333333vw, 1.25rem)) {
+	.menu__item {
+		font-size: clamp(1.125rem, 1.05rem + .3333333333vw, 1.25rem)
+	}
+}
+
+@supports not (font-size:clamp(1.125rem, 1.05rem + 0.3333333333vw, 1.25rem)) {
+	.menu__item {
+		font-size: calc(1.125rem + .125 * (100vw - 22.5rem)/ 37.5)
+	}
+}
+
+@supports (line-height:clamp(1.3125rem, 0.975rem + 1.5vw, 1.875rem)) {
+	.menu__item {
+		line-height: clamp(1.3125rem, .975rem + 1.5vw, 1.875rem)
+	}
+}
+
+@supports not (line-height:clamp(1.3125rem, 0.975rem + 1.5vw, 1.875rem)) {
+	.menu__item {
+		line-height: calc(1.3125rem + .5625 * (100vw - 22.5rem)/ 37.5)
+	}
+}
+
+@supports (margin-left:clamp(1.5rem, -1.5rem + 6.6666666667vw, 2.5rem)) {
+	.menu__item {
+		margin-left: clamp(1.5rem, -1.5rem + 6.6666666667vw, 2.5rem)
+	}
+}
+
+@supports not (margin-left:clamp(1.5rem, -1.5rem + 6.6666666667vw, 2.5rem)) {
+	.menu__item {
+		margin-left: calc(1.5rem + 1 * (100vw - 45rem)/ 15)
+	}
+}
+
+.menu__item::after {
+	width: 0;
+	height: 2px;
+	content: "";
+	background-color: #f17e14;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%
+}
+
+.menu__item:hover::after {
+	width: 100%;
+	left: 0
+}
+
+.menu__item_gradient {
+	font-weight: 550;
+	background: -o-linear-gradient(2.99deg, #6d9be3 3.39%, #aadfc1 32.8%, #f4cd63 61.74%, #eb672d 94.48%);
+	background: linear-gradient(87.01deg, #6d9be3 3.39%, #aadfc1 32.8%, #f4cd63 61.74%, #eb672d 94.48%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent
+}
